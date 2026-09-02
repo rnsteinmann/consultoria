@@ -725,3 +725,83 @@ strong {
     padding-block: 8rem;
   }
 }
+
+.carousel {
+  width: 100%;
+  max-width: 900px; /* Ajusta el ancho máximo a tu diseño */
+  margin: 0 auto;
+}
+
+/* Navegación por pestañas superiores */
+.carousel__nav {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.carousel__tab {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #ccc;
+  padding: 8px 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+}
+
+.carousel__tab:hover {
+  border-color: rgba(255, 255, 255, 0.5);
+  color: #fff;
+}
+
+.carousel__tab.active {
+  background: #ffffff;
+  color: #111111;
+  border-color: #ffffff;
+  font-weight: 600;
+}
+
+/* Transición de diapositivas */
+.carousel__slides {
+  position: relative;
+  width: 100%;
+}
+
+.carousel__slide {
+  display: none;
+  margin: 0;
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
+}
+
+.carousel__slide.active {
+  display: block;
+  opacity: 1;
+}
+
+/* Marco simulado para suavizar capturas claras en fondos oscuros */
+.carousel__img-wrapper {
+  background: #1e1e1e;
+  border-radius: 10px;
+  padding: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+
+  /* Agregamos esto para controlar la altura */
+  height: 480px; /* Ajusta esta altura a lo que mejor le quede a tu layout */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel__img-wrapper img {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain; /* Garantiza que la imagen nunca se deforme ni se recorte */
+  border-radius: 6px;
+}
