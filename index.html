@@ -188,21 +188,33 @@
           </div>
         </div>
 
-        <div class="gallery">
-          <figure>
-            <div class="gallery__img"><img src="./demo2.png" alt="Interfaz de recepción y carga rápida de trabajos" /></div>
-            <figcaption>Carga rápida</figcaption>
-          </figure>
-          <figure>
-            <div class="gallery__img"><img src="./demo1.png" alt="Tablero de control de procesos por estado" /></div>
-            <figcaption>Tablero de control</figcaption>
-          </figure>
-          <figure>
-            <div class="gallery__img"><img src="./demo3.png" alt="Plantillas simplificadas" /></div>
-            <figcaption>Formularios simplificados</figcaption>
-          </figure>
+    <div class="carousel">
+    <div class="carousel__nav">
+        <button class="carousel__tab active" onclick="switchSlide(0)">Carga rápida</button>
+        <button class="carousel__tab" onclick="switchSlide(1)">Tablero de control</button>
+        <button class="carousel__tab" onclick="switchSlide(2)">Formularios simplificados</button>
+    </div>
+
+    <div class="carousel__slides">
+        <figure class="carousel__slide active">
+        <div class="carousel__img-wrapper">
+            <img src="./demo2.png" alt="Interfaz de recepción y carga rápida de trabajos" />
         </div>
-      </div>
+        </figure>
+
+        <figure class="carousel__slide">
+        <div class="carousel__img-wrapper">
+            <img src="./demo1.png" alt="Tablero de control de procesos por estado" />
+        </div>
+        </figure>
+
+        <figure class="carousel__slide">
+        <div class="carousel__img-wrapper">
+            <img src="./demo3.png" alt="Plantillas simplificadas" />
+        </div>
+        </figure>
+    </div>
+    </div>
     </section>
 
     <!-- ===================== SOBRE MÍ ===================== -->
@@ -239,5 +251,20 @@
       <p class="mono muted">© 2026 Consultoría en Procesos y Automatización</p>
     </div>
   </footer>
+
+    <script>
+        function switchSlide(index) {
+        const slides = document.querySelectorAll('.carousel__slide');
+        const tabs = document.querySelectorAll('.carousel__tab');
+
+        slides.forEach((slide, i) => {
+            slide.classList.remove('active');
+            tabs[i].classList.remove('active');
+        });
+
+        slides[index].classList.add('active');
+        tabs[index].classList.add('active');
+        }
+    </script>
 </body>
 </html>
