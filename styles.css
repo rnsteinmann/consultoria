@@ -724,6 +724,9 @@ strong {
   .cta__inner {
     padding-block: 8rem;
   }
+     #ejemplos .grid-cards {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
 }
 
 .carousel {
