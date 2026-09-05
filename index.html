@@ -1,336 +1,390 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="theme-color" content="#f4f0e6" />
-  <title>Organización de Procesos | Orden Operativo</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap"
-    rel="stylesheet"
-  />
-  <link rel="stylesheet" href="styles.css" />
-</head>
-<body>
-  <header class="nav">
-    <div class="nav__inner">
-      <a href="#top" class="nav__brand">
-        <span aria-hidden="true" class="nav__logo">::</span>
-        <span class="nav__name">orden<span class="accent">.operativo</span></span>
-      </a>
-      <nav class="nav__links">
-        <a href="#diagnostico">Diagnóstico</a>
-        <a href="#ejemplos">Ejemplos</a>
-        <a href="#herramientas">Herramientas</a>
-        <a href="#metodologia">Metodología</a>
-      </nav>
-      <a href="mailto:radiobuzz@gmail.com" class="btn btn--accent">Contacto</a>
-    </div>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f4f6f1" />
+    <title>Orden Operativo | Que tu negocio no dependa de tu memoria</title>
+    <meta
+      name="description"
+      content="Ayuda para ordenar el trabajo de todos los días de tu negocio con herramientas simples: del caos de papelitos y chats sueltos a un sistema claro que cualquiera entiende."
+    />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- ENCABEZADO -->
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="#top" class="brand">
+          <span class="brand-mark" aria-hidden="true">O</span>
+          <span class="brand-name">Orden <span class="accent">Operativo</span></span>
+        </a>
+        <nav class="nav" aria-label="Navegación principal">
+          <a href="#diagnostico">Diagnóstico</a>
+          <a href="#ejemplos">Ejemplos</a>
+          <a href="#herramientas">Herramientas</a>
+          <a href="#metodologia">Cómo se trabaja</a>
+        </nav>
+        <a href="mailto:radiobuzz@gmail.com" class="btn btn-dark">Escribime</a>
+      </div>
+    </header>
 
-  <main>
-    <!-- HERO -->
-    <section id="top" class="hero bg-grid">
-      <div class="hero__inner">
-        <div>
-          <p class="eyebrow-pill"><span class="dot"></span> Soluciones prácticas</p>
-          <h1 class="hero__title">
-            Que tu negocio funcione bien sin que todo dependa de tu
-            <span class="hero__highlight">memoria<span aria-hidden="true" class="flow-dash underline-dash"></span></span>
-          </h1>
-          <p class="hero__lead">
-            Se arman formas simples de organizar el trabajo de todos los días, para que no se te escape nada y la administración deje de ser un dolor de cabeza.
-          </p>
-          <div class="hero__actions">
-            <a href="mailto:radiobuzz@gmail.com" class="btn btn--accent btn--lg">Consultar por mail</a>
-            <a href="#ejemplos" class="btn btn--outline btn--lg">Ver ejemplos claros</a>
+    <main>
+      <!-- HERO -->
+      <section id="top" class="hero">
+        <div class="paper-lines" aria-hidden="true"></div>
+        <div class="container hero-grid">
+          <div>
+            <p class="eyebrow-pill">
+              <span class="dot" aria-hidden="true"></span>
+              Soluciones simples para el día a día
+            </p>
+            <h1 class="hero-title">
+              Que tu negocio funcione bien sin que todo dependa de tu
+              <span class="hl">memoria</span>
+            </h1>
+            <p class="hero-lead">
+              Se arman formas simples de organizar el trabajo de todos los días, para que no se
+              te escape nada y la parte administrativa deje de ser un dolor de cabeza.
+            </p>
+            <div class="hero-actions">
+              <a href="mailto:radiobuzz@gmail.com" class="btn btn-accent">
+                Consultar por mail
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+              </a>
+              <a href="#ejemplos" class="btn btn-outline">Ver ejemplos claros</a>
+            </div>
           </div>
-        </div>
 
-        <div class="flow">
-          <div class="flow__head"><span>esquema_de_orden.v2</span></div>
-          <div class="flow__grid">
-            <div class="flow__panel flow__panel--dashed">
-              <p class="flow__label muted">Antes</p>
-              <div class="flow__chaos">
-                <span style="top:5%; left:10%; transform:rotate(-12deg);"></span>
-                <span style="top:25%; left:70%; transform:rotate(15deg);"></span>
-                <span style="top:60%; left:20%; transform:rotate(-5deg);"></span>
-                <span style="top:45%; left:50%; transform:rotate(20deg);"></span>
+          <!-- ANTES / DESPUÉS -->
+          <div class="ba-card">
+            <div class="ba-head">
+              <span class="ba-title">Del desorden al orden</span>
+              <span class="ba-sub">tu semana real</span>
+            </div>
+            <div class="ba-grid">
+              <div class="ba-before">
+                <p class="ba-label">Antes</p>
+                <div class="ba-notes">
+                  <span class="note note-yellow n1">llamar proveedor??</span>
+                  <span class="note note-coral n2">falta stock</span>
+                  <span class="note note-white n3">pedido Ana</span>
+                  <span class="note note-white n4">pagar luz</span>
+                  <span class="note note-yellow n5">¿quién atendía?</span>
+                </div>
+              </div>
+              <div class="ba-arrow">
+                <span class="arrow-circle">
+                  <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                </span>
+              </div>
+              <div class="ba-after">
+                <p class="ba-label after">Después</p>
+                <ol class="ba-steps">
+                  <li><span class="check"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></span><span class="step-chip">Entra el pedido</span></li>
+                  <li><span class="check"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></span><span class="step-chip">Se anota solo</span></li>
+                  <li><span class="check"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></span><span class="step-chip">Alguien lo toma</span></li>
+                  <li><span class="check"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></span><span class="step-chip">Listo y avisado</span></li>
+                </ol>
               </div>
             </div>
-            <div class="flow__panel flow__panel--after">
-              <p class="flow__label accent">Después</p>
-              <ol class="flow__steps">
-                <span aria-hidden="true" class="flow-dash flow__line"></span>
-                <li><span class="flow__node"></span><span class="flow__step">Ingreso de datos</span></li>
-                <li><span class="flow__node"></span><span class="flow__step">Tarea asignada</span></li>
-                <li><span class="flow__node"></span><span class="flow__step">Estado actual</span></li>
-                <li><span class="flow__node"></span><span class="flow__step">Trabajo listo</span></li>
-              </ol>
+          </div>
+        </div>
+      </section>
+
+      <!-- DIAGNÓSTICO -->
+      <section id="diagnostico" class="section">
+        <div class="container">
+          <div class="section-head">
+            <p class="eyebrow">¿Qué se resuelve?</p>
+            <h2 class="section-title">
+              Cuando el orden está solo en tu cabeza, el negocio no puede crecer.
+            </h2>
+            <p class="section-lead">
+              Puede ser una pizarra, un cuaderno, el WhatsApp que ya usás o, si hace falta,
+              algo digital. Lo importante es encontrar qué te complica el día a día y
+              resolverlo de la forma más simple posible.
+            </p>
+          </div>
+          <div class="grid-4">
+            <div class="card feature">
+              <span class="feature-icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><rect width="8" height="4" x="8" y="2" rx="1" ry="1"/><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><path d="M12 11h4"/><path d="M12 16h4"/><path d="M8 11h.01"/><path d="M8 16h.01"/></svg>
+              </span>
+              <h3>Que no se pierda nada</h3>
+              <p>Se terminan los datos sueltos en papelitos o chats. Toda la información importante queda siempre a mano y en un solo lugar.</p>
+            </div>
+            <div class="card feature">
+              <span class="feature-icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"/></svg>
+              </span>
+              <h3>Menos interrupciones</h3>
+              <p>Se ordena la forma de trabajar para que el equipo sepa qué hacer y cómo seguir, sin tener que preguntarte cada paso.</p>
+            </div>
+            <div class="card feature">
+              <span class="feature-icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></svg>
+              </span>
+              <h3>Saber cómo viene el trabajo</h3>
+              <p>Con herramientas simples podés saber en qué estado está cada pedido o tarea sin adivinar ni preguntar uno por uno.</p>
+            </div>
+            <div class="card feature">
+              <span class="feature-icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20h9"/><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg>
+              </span>
+              <h3>Carga de datos sin errores</h3>
+              <p>Se simplifica la forma de anotar los datos para que sea rápido, no falte nada importante y no haya que escribir lo mismo dos veces.</p>
             </div>
           </div>
         </div>
+      </section>
+
+      <!-- EJEMPLOS -->
+      <section id="ejemplos" class="section section-tint">
+        <div class="container">
+          <div class="section-head">
+            <p class="eyebrow">¿Cómo se ve en la realidad?</p>
+            <h2 class="section-title">Ejemplos de organización, rubro por rubro</h2>
+          </div>
+          <div class="grid-4">
+            <article class="card example">
+              <span class="tag">Ventas / Distribución</span>
+              <h3>Pedidos que no se olvidan</h3>
+              <p>Se ordena cómo se reciben los pedidos para que, apenas entran, queden anotados y listos para preparar. Se terminan los "me olvidé de anotar esto".</p>
+            </article>
+            <article class="card example">
+              <span class="tag">Depósito / Inventario</span>
+              <h3>Control de stock sin sorpresas</h3>
+              <p>Un registro simple de lo que entra y sale. Evita comprar de más por error o quedarte sin insumos en medio de un trabajo.</p>
+            </article>
+            <article class="card example">
+              <span class="tag">Producción / Taller</span>
+              <h3>Control de lo que hay para hacer</h3>
+              <p>Se ve el avance de cada trabajo de un vistazo. Sirve para saber qué falta para una entrega y organizar las prioridades del día.</p>
+            </article>
+            <article class="card example">
+              <span class="tag">Administración</span>
+              <h3>Pasos a seguir precisos</h3>
+              <p>Quedan bien definidos los pasos de las tareas de todos los días. Cualquiera que ayude en el negocio sabe cómo manejarse sin errores comunes.</p>
+            </article>
+            <article class="card example">
+              <span class="tag">Gastronomía</span>
+              <h3>Comandas que no se pierden</h3>
+              <p>Se ordena cómo se anota el pedido de la mesa y cómo llega a la cocina. Menos platos equivocados y menos líos para el mozo.</p>
+            </article>
+            <article class="card example">
+              <span class="tag">Servicios con turnos</span>
+              <h3>Agenda que todos entienden</h3>
+              <p>Se ordena la agenda para que no se pisen los horarios y cualquiera sepa quién viene y cuándo, sin tener que preguntarte a vos.</p>
+            </article>
+            <article class="card example">
+              <span class="tag">Obra / Servicios a domicilio</span>
+              <h3>En qué etapa está cada trabajo</h3>
+              <p>Un panel simple con el estado de cada trabajo, para saber de un vistazo qué falta sin llamar ni ir hasta el lugar a mirar.</p>
+            </article>
+            <article class="card example">
+              <span class="tag">Producción a medida</span>
+              <h3>Pedidos que no se mezclan</h3>
+              <p>Cada pedido tiene su ficha con los datos importantes a la vista, para saber cuál va primero y qué le falta a cada uno.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- HERRAMIENTAS -->
+      <section id="herramientas" class="section">
+        <div class="container">
+          <div class="section-head">
+            <p class="eyebrow">¿Con qué se resuelve?</p>
+            <h2 class="section-title">La herramienta se elige según el negocio, no al revés</h2>
+            <p class="section-lead">
+              No hace falta tecnología para ordenarse. A veces alcanza con una pizarra, otras
+              conviene algo digital. Se usa lo que resuelva tu problema y sea más fácil para la
+              persona que lo va a usar todos los días.
+            </p>
+          </div>
+          <div class="tools-grid">
+            <div class="tool">
+              <span class="tool-n">01</span>
+              <h3>Pizarra o cartelera física</h3>
+              <p>Para lugares donde no hay PC ni señal segura. Con mirarla rápido ya sabés cómo viene el día.</p>
+            </div>
+            <div class="tool">
+              <span class="tool-n">02</span>
+              <h3>Etiquetas y códigos de color</h3>
+              <p>Marcas de color para identificar de un vistazo el estado o la prioridad de algo, sin anotar nada aparte.</p>
+            </div>
+            <div class="tool">
+              <span class="tool-n">03</span>
+              <h3>Planillas y formularios en papel</h3>
+              <p>Cuando lo que hace falta es un modo claro de anotar las cosas, no una pantalla. Se aprende en cinco minutos.</p>
+            </div>
+            <div class="tool">
+              <span class="tool-n">04</span>
+              <h3>WhatsApp bien organizado</h3>
+              <p>La app que ya usa todo el equipo, pero con un orden fijo para los mensajes y grupos, para que nada se pierda.</p>
+            </div>
+            <div class="tool">
+              <span class="tool-n">05</span>
+              <h3>Apps existentes</h3>
+              <p>Trello, Google Forms, Calendar u otras apps gratis o baratas, configuradas para que funcionen tal como trabajás.</p>
+            </div>
+            <div class="tool">
+              <span class="tool-n">06</span>
+              <h3>Sistema a medida</h3>
+              <p>Cuando el negocio ya es grande o el trabajo se complicó, se arma un sistema propio para esa tarea puntual.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- METODOLOGÍA -->
+      <section id="metodologia" class="section section-tint">
+        <div class="container">
+          <div class="section-head">
+            <p class="eyebrow">Cómo se trabaja</p>
+            <h2 class="section-title">Tres pasos para llegar al orden</h2>
+          </div>
+          <ol class="steps">
+            <li class="step">
+              <span class="step-n">01</span>
+              <h3>Ver cómo trabajás hoy</h3>
+              <p>Se analiza cómo se trabaja día a día para encontrar dónde están las trabas y los olvidos más comunes.</p>
+            </li>
+            <li class="step">
+              <span class="step-n">02</span>
+              <h3>Diseñar lo más simple</h3>
+              <p>Se arma una herramienta o una forma de anotar fácil de usar. Lo principal es que te ahorre tiempo, no que te dé más trabajo.</p>
+            </li>
+            <li class="step">
+              <span class="step-n">03</span>
+              <h3>Empezar a usarlo</h3>
+              <p>Se pone en marcha el nuevo método y se ajusta lo que haga falta hasta que el negocio funcione más liviano.</p>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- CASO REAL -->
+      <section id="caso" class="section section-ink">
+        <div class="container">
+          <div class="section-head">
+            <p class="eyebrow">Un caso real</p>
+            <h2 class="section-title">Un taller de servicio técnico que dejó de perder equipos de vista</h2>
+          </div>
+          <div class="case-top">
+            <div class="case-problem">
+              <p class="case-label">El problema</p>
+              <p>La recepción de equipos era lenta, costaba saber dónde estaba cada aparato y no había control de los trabajos pendientes.</p>
+            </div>
+            <div class="case-solution">
+              <p class="case-label accent">La solución</p>
+              <p>Carga de datos guiada con preguntas simples, formularios rápidos y un panel interno para saber en qué estado está cada reparación.</p>
+            </div>
+          </div>
+          <div class="case-mocks">
+            <div class="mock">
+              <p class="mock-label">Carga guiada</p>
+              <div class="intake">
+                <div class="intake-row"><span class="intake-k">¿Qué equipo es?</span><span class="intake-v">Notebook · Lenovo</span></div>
+                <div class="intake-row"><span class="intake-k">¿Qué falla?</span><span class="intake-v">No enciende</span></div>
+                <div class="intake-row"><span class="intake-k">Cliente</span><span class="intake-v">María G. · 3644-xxxx</span></div>
+                <span class="intake-btn">Guardar ingreso <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span>
+              </div>
+            </div>
+            <div class="mock">
+              <p class="mock-label">Panel interno · estado de cada equipo</p>
+              <div class="board">
+                <div class="board-col">
+                  <p class="board-h"><span class="bdot muted"></span>Ingresado</p>
+                  <div class="board-item">#218 TV</div>
+                  <div class="board-item">#219 Notebook</div>
+                </div>
+                <div class="board-col">
+                  <p class="board-h"><span class="bdot accent"></span>En reparación</p>
+                  <div class="board-item">#215 Consola</div>
+                  <div class="board-item">#217 Monitor</div>
+                </div>
+                <div class="board-col">
+                  <p class="board-h"><span class="bdot primary"></span>Listo</p>
+                  <div class="board-item">#212 PC</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SOBRE MÍ -->
+      <section id="sobre-mi" class="section">
+        <div class="container about-grid">
+          <div>
+            <p class="eyebrow">Sobre mí</p>
+            <h2 class="section-title">Rodrigo Steinmann</h2>
+            <div class="about-text">
+              <p>
+                Más de <strong>11 años de experiencia en puestos administrativos y atención al público</strong>
+                me dejaron entender el trabajo desde el mostrador. Sé lo que es lidiar con el
+                desorden mientras tenés un cliente enfrente.
+              </p>
+              <p>
+                Esa experiencia es la que me permite pensar soluciones que de verdad sirven para
+                el día a día. No busco sistemas complicados, sino formas de trabajar más simples
+                para que el que opera la pase mejor y el responsable esté más tranquilo.
+              </p>
+            </div>
+            <dl class="about-stats">
+              <div>
+                <dt>Trayectoria</dt>
+                <dd>11+ años</dd>
+              </div>
+              <div>
+                <dt>Enfoque</dt>
+                <dd>Práctico</dd>
+              </div>
+            </dl>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA -->
+      <section class="cta">
+        <div class="paper-lines" aria-hidden="true"></div>
+        <div class="container cta-inner">
+          <h2 class="cta-title">¿Ordenamos tu emprendimiento?</h2>
+          <p class="cta-lead">
+            Se hace un diagnóstico inicial para ver dónde podés ganar tiempo y claridad en el
+            día a día de tu negocio.
+          </p>
+          <a href="mailto:radiobuzz@gmail.com" class="btn btn-accent">
+            Enviar mail de consulta
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <!-- PIE -->
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div class="brand">
+          <span class="brand-mark small" aria-hidden="true">O</span>
+          <span class="brand-name small">Orden Operativo</span>
+        </div>
+        <p class="footer-copy">© <span id="year">2026</span> · Organización de procesos operativos</p>
+        <a href="mailto:radiobuzz@gmail.com" class="footer-mail">radiobuzz@gmail.com</a>
       </div>
-    </section>
+    </footer>
 
-    <!-- DIAGNÓSTICO -->
-    <section id="diagnostico" class="section">
-      <div class="wrap wrap--narrow">
-        <div class="section__head">
-          <p class="eyebrow accent">¿Qué problemas se resuelven?</p>
-          <h2 class="section__title">Cuando el orden está solo en tu cabeza, el emprendimiento no puede crecer.</h2>
-          <p class="hero__lead" style="margin-top:1rem;">Puede ser una pizarra, un cuaderno, el WhatsApp que ya usás, o si hace falta, algo digital. Lo importante es encontrar qué es lo que te complica el día a día y resolverlo de la forma más simple posible.</p>
-        </div>
-
-        <div class="grid-cards">
-          <div class="pcard">
-            <span class="pcard__number">01</span>
-            <h3>Que no se pierda nada</h3>
-            <p>Se terminan los datos sueltos en papelitos o chats. Toda la información importante queda siempre a mano y en un solo lugar.</p>
-          </div>
-          <div class="pcard">
-            <span class="pcard__number">02</span>
-            <h3>Menos interrupciones</h3>
-            <p>Se ordena la forma de trabajar para que el equipo sepa qué hacer y cómo seguir, sin tener que preguntarte cada paso.</p>
-          </div>
-          <div class="pcard">
-            <span class="pcard__number">03</span>
-            <h3>Saber cómo viene el trabajo</h3>
-            <p>Con herramientas simples, se puede saber en qué estado está cada pedido o tarea sin tener que adivinar o preguntar uno por uno.</p>
-          </div>
-          <div class="pcard">
-            <span class="pcard__number">04</span>
-            <h3>Carga de datos sin errores</h3>
-            <p>Se simplifica la forma de anotar los datos para que sea rápido, no falte nada importante y no haya que escribir lo mismo dos veces.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-  <!-- EJEMPLOS -->
-    <section id="ejemplos" class="section section--muted">
-      <div class="wrap">
-        <div class="section__head">
-          <p class="eyebrow accent">¿Cómo se ve esto en la realidad?</p>
-          <h2 class="section__title">Ejemplos de organización</h2>
-        </div>
-
-        <div class="grid-cards" style="background:transparent; border:none; gap:2rem;">
-          <!-- Ejemplo 1 -->
-          <div class="scard">
-            <p class="mono accent" style="margin-bottom:1rem">VENTAS / DISTRIBUCIÓN</p>
-            <h3>Pedidos que no se olvidan</h3>
-            <p>Se ordena cómo se reciben los pedidos para que, apenas entran, queden anotados y listos para preparar. Se terminan los "me olvidé de anotar esto" o "no entendí qué pidió".</p>
-          </div>
-
-          <!-- Ejemplo 2 -->
-          <div class="scard">
-            <p class="mono accent" style="margin-bottom:1rem">DEPÓSITO / INVENTARIO</p>
-            <h3>Control de stock sin sorpresas</h3>
-            <p>Se lleva un registro simple de lo que entra y sale. Evita comprar de más por error o quedarte sin insumos en medio de un trabajo por no revisar a tiempo.</p>
-          </div>
-
-          <!-- Ejemplo 3 -->
-          <div class="scard">
-            <p class="mono accent" style="margin-bottom:1rem">PRODUCCIÓN / TALLER</p>
-            <h3>Control de lo que hay para hacer</h3>
-            <p>Se puede ver el avance de cada trabajo de un vistazo. Sirve para saber rápido qué falta para terminar una entrega y organizar las prioridades del día sin vueltas.</p>
-          </div>
-
-          <!-- Ejemplo 4 -->
-          <div class="scard">
-            <p class="mono accent" style="margin-bottom:1rem">ADMINISTRACIÓN</p>
-            <h3>Pasos a seguir precisos</h3>
-            <p>Se dejan bien definidos los pasos para las tareas de todos los días. Así, cualquiera que ayude en el negocio sabe cómo manejarse sin cometer errores comunes.</p>
-          </div>
-
-          <!-- Ejemplo 5 -->
-          <div class="scard">
-            <p class="mono accent" style="margin-bottom:1rem">GASTRONOMÍA</p>
-            <h3>Comandas que no se pierden</h3>
-            <p>Se ordena cómo se anota el pedido de la mesa y cómo llega a la cocina. Menos platos equivocados y menos complicaciones para el mozo.</p>
-          </div>
-
-          <!-- Ejemplo 6 -->
-          <div class="scard">
-            <p class="mono accent" style="margin-bottom:1rem">SERVICIOS CON TURNOS</p>
-            <h3>Agenda que todos entienden</h3>
-            <p>Se ordena la agenda de turnos para que no se pisen los horarios y cualquiera pueda saber quién viene y cuándo, sin tener que preguntarte a vos.</p>
-          </div>
-
-          <!-- Ejemplo 7 -->
-          <div class="scard">
-            <p class="mono accent" style="margin-bottom:1rem">OBRA / SERVICIOS A DOMICILIO</p>
-            <h3>Saber en qué etapa está cada trabajo</h3>
-            <p>Se arma un panel simple mostrando el estado de cada trabajo, para saber de un vistazo qué falta sin tener que llamar o ir hasta el lugar a mirar.</p>
-          </div>
-
-          <!-- Ejemplo 8 -->
-          <div class="scard">
-            <p class="mono accent" style="margin-bottom:1rem">PRODUCCIÓN A MEDIDA</p>
-            <h3>Pedidos que no se mezclan</h3>
-            <p>Cada pedido tiene su propia ficha con los datos importantes a la vista, para saber cuál va primero y qué le falta a cada uno sin tener que preguntar.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- HERRAMIENTAS -->
-    <section id="herramientas" class="section section--muted">
-      <div class="wrap wrap--narrow">
-        <div class="section__head">
-          <p class="eyebrow accent">¿Con qué se resuelve?</p>
-          <h2 class="section__title">La herramienta se elige según el negocio, no al revés</h2>
-          <p class="hero__lead" style="margin-top:1rem;">No hace falta tecnología para ordenarse. A veces alcanza con una pizarra, otras veces conviene algo digital. Se usa lo que resuelva tu problema y sea más fácil para la persona que lo va a usar todos los días.</p>
-        </div>
-
-        <div class="grid-cards">
-          <div class="pcard">
-            <span class="pcard__number">01</span>
-            <h3>Pizarra o cartelera física</h3>
-            <p>Para lugares donde no hay PC ni señal segura. Con mirarla rápidamente ya sabés cómo viene el día.</p>
-          </div>
-          <div class="pcard">
-            <span class="pcard__number">02</span>
-            <h3>Etiquetas y códigos de color</h3>
-            <p>Carteles o marcas de color para identificar de un vistazo el estado o la prioridad de algo, sin tener que anotar nada aparte.</p>
-          </div>
-          <div class="pcard">
-            <span class="pcard__number">03</span>
-            <h3>Planillas y formularios en papel</h3>
-            <p>Cuando lo que hace falta es un modo claro de anotar las cosas, no una pantalla. Se aprende a usar en cinco minutos.</p>
-          </div>
-          <div class="pcard">
-            <span class="pcard__number">04</span>
-            <h3>WhatsApp bien organizado</h3>
-            <p>La app que ya usa todo el equipo, pero con un orden fijo para los mensajes o los grupos, para que nada se pierda entre tanto chat.</p>
-          </div>
-          <div class="pcard">
-            <span class="pcard__number">05</span>
-            <h3>Apps existentes</h3>
-            <p>Trello, Google Forms, Calendar u otras apps gratis o baratas, configuradas para que funcionen tal cómo trabajás en realidad.</p>
-          </div>
-          <div class="pcard">
-            <span class="pcard__number">06</span>
-            <h3>Sistema a medida</h3>
-            <p>Cuando el negocio ya es grande o el trabajo se complicó, se arma un sistema propio, pensado para esa tarea puntual.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- METODOLOGÍA -->
-    <section id="metodologia" class="section">
-      <div class="wrap">
-        <div class="section__head">
-          <h2 class="section__title">Cómo se llega al orden</h2>
-        </div>
-        <div class="steps">
-          <span aria-hidden="true" class="flow-dash steps__line"></span>
-          <div class="scard">
-            <span class="scard__num">01</span>
-            <h3>Ver cómo trabajás hoy</h3>
-            <p>Se analiza cómo se trabaja día a día para encontrar dónde están las trabas o los olvidos más comunes.</p>
-          </div>
-          <div class="scard">
-            <span class="scard__num">02</span>
-            <h3>Diseñar lo más simple</h3>
-            <p>Se arma una herramienta o una forma de anotar que sea fácil de usar. Lo principal es que te ahorre tiempo, no que te dé más trabajo.</p>
-          </div>
-          <div class="scard">
-            <span class="scard__num">03</span>
-            <h3>Empezar a usarlo</h3>
-            <p>Se pone en marcha el nuevo método y se ajusta lo que haga falta hasta que el negocio funcione más liviano.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- CASO TALLER -->
-    <section id="caso" class="caso bg-grid-ink">
-      <div class="wrap">
-        <div class="section__head">
-          <p class="eyebrow accent">Un caso real</p>
-          <h2 class="section__title">Organización para un taller de servicio técnico</h2>
-        </div>
-        <div class="caso__cols">
-          <div class="caso__box">
-            <p class="eyebrow caso__muted">El problema</p>
-            <p class="caso__text">La recepción de equipos era lenta, costaba saber dónde estaba cada aparato y no había control administrativo de los trabajos pendientes.</p>
-          </div>
-          <div class="caso__box caso__box--accent">
-            <p class="eyebrow accent">La solución</p>
-            <p class="caso__text">Carga de datos guiada con preguntas simples, formularios rápidos y un panel interno para saber en qué estado está cada reparación.</p>
-          </div>
-        </div>
-        <div class="carousel">
-          <div class="carousel__nav">
-            <button class="carousel__tab active" onclick="switchSlide(0)">Carga guiada</button>
-            <button class="carousel__tab" onclick="switchSlide(1)">Control interno</button>
-            <button class="carousel__tab" onclick="switchSlide(2)">Formularios rápidos</button>
-          </div>
-          <div class="carousel__slides">
-            <figure class="carousel__slide active">
-              <div class="carousel__img-wrapper"><img src="./demo2.png" alt="Carga de datos" /></div>
-            </figure>
-            <figure class="carousel__slide">
-              <div class="carousel__img-wrapper"><img src="./demo1.png" alt="Control de estados" /></div>
-            </figure>
-            <figure class="carousel__slide">
-              <div class="carousel__img-wrapper"><img src="./demo3.png" alt="Formularios rápidos" /></div>
-            </figure>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- SOBRE MÍ -->
-    <section id="sobre-mi" class="section">
-      <div class="wrap about">
-        <div>
-          <h2 class="section__title">Experiencia administrativa</h2>
-          <p class="muted" style="margin-top: 0.5rem;">Rodrigo Steinmann</p>
-          <dl class="about__stats">
-            <div><dt>Trayectoria</dt><dd>11+ años</dd></div>
-            <div><dt>Enfoque</dt><dd>Práctico</dd></div>
-          </dl>
-        </div>
-        <div class="about__text">
-          <p>Más de <strong>11 años de experiencia en puestos administrativos y atención al público</strong> permiten entender el trabajo desde el mostrador. Sé lo que es lidiar con el desorden mientras tenés un cliente enfrente.</p>
-          <p>Esa experiencia es la que permite pensar soluciones que de verdad sirven para el día a día. No se buscan sistemas complicados, sino formas de trabajar más simples para que el que opera la pase mejor y el responsable pueda estar más tranquilo.</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="cta bg-grid">
-      <div class="cta__inner">
-        <h2 class="cta__title">¿Ordenamos tu emprendimiento?</h2>
-        <p class="cta__lead">Se hace un diagnóstico inicial para ver dónde podés ganar tiempo y claridad en el día a día de tu negocio.</p>
-        <a href="mailto:radiobuzz@gmail.com" class="btn btn--accent btn--lg">Enviar mail de consulta <span aria-hidden="true">&rarr;</span></a>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <div class="footer__inner">
-      <p class="mono muted">© 2026 Organización de Procesos Operativos</p>
-    </div>
-  </footer>
-
-  <script>
-    function switchSlide(index) {
-      const slides = document.querySelectorAll('.carousel__slide');
-      const tabs = document.querySelectorAll('.carousel__tab');
-      slides.forEach((slide, i) => {
-        slide.classList.remove('active');
-        tabs[i].classList.remove('active');
-      });
-      slides[index].classList.add('active');
-      tabs[index].classList.add('active');
-    }
-  </script>
-</body>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
 </html>
