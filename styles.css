@@ -8,10 +8,10 @@
   --foreground: oklch(0.22 0.02 55);
   --card: oklch(0.985 0.006 85);
   --muted: oklch(0.93 0.012 85);
-  --muted-foreground: oklch(0.5 0.018 60);
-  --accent: oklch(0.72 0.17 55);
+  --muted-foreground: oklch(0.4 0.02 60);
+  --accent: oklch(0.56 0.16 50);
   --accent-foreground: oklch(0.99 0.01 85);
-  --border: oklch(0.88 0.014 80);
+  --border: oklch(0.82 0.016 80);
   --ink: oklch(0.2 0.02 55);
   --ink-foreground: oklch(0.94 0.01 85);
   --radius: 0.5rem;
@@ -430,26 +430,12 @@ strong {
   gap: 0.75rem;
   background: var(--card);
   padding: 1.75rem;
-  transition: background-color 0.15s ease;
 }
-.pcard:hover {
-  background: color-mix(in oklch, var(--muted) 50%, transparent);
-}
-.pcard__top {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.pcard__ring {
-  width: 1.5rem;
-  height: 1.5rem;
-  border: 1px solid var(--border);
-  border-radius: 999px;
-  transition: border-color 0.15s ease, background-color 0.15s ease;
-}
-.pcard:hover .pcard__ring {
-  border-color: var(--accent);
-  background: color-mix(in oklch, var(--accent) 10%, transparent);
+.pcard__number {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  color: var(--muted-foreground);
 }
 .pcard h3 {
   font-size: 1.125rem;
@@ -532,7 +518,7 @@ strong {
   background: color-mix(in oklch, var(--accent) 10%, transparent);
 }
 .caso__muted {
-  color: color-mix(in oklch, var(--ink-foreground) 60%, transparent);
+  color: color-mix(in oklch, var(--ink-foreground) 75%, transparent);
 }
 .caso__text {
   color: color-mix(in oklch, var(--ink-foreground) 85%, transparent);
@@ -724,8 +710,11 @@ strong {
   .cta__inner {
     padding-block: 8rem;
   }
-     #ejemplos .grid-cards {
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  #ejemplos .grid-cards {
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+  #herramientas .grid-cards {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
