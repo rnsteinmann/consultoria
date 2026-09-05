@@ -293,7 +293,7 @@ svg.icon {
 
 .hero-lead {
   margin-top: 1.5rem;
-  max-width: 28rem;
+  max-width: 100%;
   font-size: 1.125rem;
   color: var(--muted-foreground);
   text-wrap: pretty;
